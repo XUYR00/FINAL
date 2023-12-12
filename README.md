@@ -31,7 +31,9 @@
 >
 >        圖4-1員工註冊實體圖
 > 宿舍衛生管理實體圖如圖4-2所示:
+>
 > ![image](https://github.com/XUYR00/FINAL/blob/main/image/4-2.drawio.png)
+>
 > 圖4-2宿舍衛生管理實體圖
 
 ### 5.1 登錄註冊模塊
