@@ -231,7 +231,7 @@
 >
 >request.getSession().removeAttribute(exit);
 >
->return new Result(true, "注销成功");
+>return new Result(true, "注銷成功");
 >
 >} catch (Exception e) {
 >
@@ -239,7 +239,7 @@
 >
 >e.printStackTrace();
 >
->return new Result(false, "注销失败");
+>return new Result(false, "注銷失败");
 >
 >}
 >
@@ -247,6 +247,50 @@
 >
 >}
 >
+>## 6.2發布公告功能實現
+> <!-- ******************** 公告 ******************* -->
+> 
+><select id="getNoticeManage" resultType="com.cya.entity.Notice">
+>
+>select * from t_notice
+>
+><where>
+>
+><if test="filter=='date' and key !='' ">
+>
+>date like concat("%",#{key},"%")
+>
+></if>
+>
+</where>
+>
+</select>
+> 
+><insert id="addNoticeManage" parameterType="com.cya.entity.Notice">
+>
+>insert into t_notice(noticePerson,date,content) values(#{noticePerson},current_date,#{content})
+>
+></insert>
+>  
+><select id="getNoticeMangerById" parameterType="Integer" resultType="com.cya.entity.Notice">
+>
+>select * from t_notice where noticeId=#{noticeId}
+>
+></select>
+>  
+><update id="updataNoticeManageById" parameterType="com.cya.entity.Notice">
+>
+>update t_notice set noticePerson=#{noticePerson},content=#{content} where noticeId=#{noticeId}
+>
+></update>
+> 
+><delete id="noticeManagerDeleteById" parameterType="Integer">
+> 
+>delete from t_notice where noticeId=#{noticeId}
+>
+></delete>
+> 
+><!-- ******************** 公告 ******************* -->
 >
 ># 7.參考文獻(源代碼)：
 > https://reurl.cc/j3Mbjy
