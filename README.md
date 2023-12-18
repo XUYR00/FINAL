@@ -250,7 +250,7 @@
 >## 6.2發布公告功能實現
 > <!-- ******************** 公告 ******************* -->
 >
-> <select id="getNoticeManage" resultType="com.cya.entity.Notice">
+><select id="getNoticeManage" resultType="com.cya.entity.Notice">
 >
 >select * from t_notice
 >
