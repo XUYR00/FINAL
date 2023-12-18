@@ -250,49 +250,50 @@
 >## 6.2發布公告功能實現
 > <!-- ******************** 公告 ******************* -->
 > 
-><select id="getNoticeManage" resultType="com.cya.entity.Notice">
+> <select id="getNoticeManage" resultType="com.cya.entity.Notice">
 >
 >select * from t_notice
 >
-><where>
+> <where>
 >
-><if test="filter=='date' and key !='' ">
+>< if test="filter=='date' and key !='' ">
 >
 >date like concat("%",#{key},"%")
 >
-></if>
+> </if>
 >
-</where>
+> </where>
 >
-</select>
+> </select>
 > 
-><insert id="addNoticeManage" parameterType="com.cya.entity.Notice">
+> <insert id="addNoticeManage" parameterType="com.cya.entity.Notice">
 >
 >insert into t_notice(noticePerson,date,content) values(#{noticePerson},current_date,#{content})
 >
-></insert>
+> </insert>
 >  
-><select id="getNoticeMangerById" parameterType="Integer" resultType="com.cya.entity.Notice">
+> <select id="getNoticeMangerById" parameterType="Integer" resultType="com.cya.entity.Notice">
 >
 >select * from t_notice where noticeId=#{noticeId}
 >
-></select>
+> </select>
 >  
-><update id="updataNoticeManageById" parameterType="com.cya.entity.Notice">
+> <update id="updataNoticeManageById" parameterType="com.cya.entity.Notice">
 >
 >update t_notice set noticePerson=#{noticePerson},content=#{content} where noticeId=#{noticeId}
 >
-></update>
+> </update>
 > 
-><delete id="noticeManagerDeleteById" parameterType="Integer">
+> <delete id="noticeManagerDeleteById" parameterType="Integer">
 > 
 >delete from t_notice where noticeId=#{noticeId}
 >
-></delete>
+> </delete>
 > 
-><!-- ******************** 公告 ******************* -->
+> <!-- ******************** 公告 ******************* -->
 >
-># 7.參考文獻(源代碼)：
+
+> # 7.參考文獻(源代碼)：
 > https://reurl.cc/j3Mbjy
 > 
 > https://reurl.cc/54k0Q6
