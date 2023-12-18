@@ -133,5 +133,6 @@
 > 
 > 圖5-12分配任務管理界面圖
 ># 參考文獻(源代碼)：
-> https://blog.csdn.net/weixin_61498557/article/details/132803788?utm_medium=distribute.pc_relevant.none-task-blog-2~default~baidujs_baidulandingword~default-4-132803788-blog-128769637.235^v39^pc_relevant_anti_t3_base&spm=1001.2101.3001.4242.3&utm_relevant_index=7
+> https://reurl.cc/54k0Q6
+> https://reurl.cc/E48Ov1
 
