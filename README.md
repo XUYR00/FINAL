@@ -247,10 +247,10 @@
 >
 >}
 >
-># 6.2發布公告功能實現
+>## 6.2發布公告功能實現
 > ![image](https://github.com/XUYR00/FINAL/blob/main/%E5%8E%9F%E5%A7%8B%E7%A2%BC/6-2.png)
 >
-># 6.3考勤紀錄功能實現
+>## 6.3考勤紀錄功能實現
 > ![image](https://github.com/XUYR00/FINAL/blob/main/%E5%8E%9F%E5%A7%8B%E7%A2%BC/6-3-1.png)
 > ![image](https://github.com/XUYR00/FINAL/blob/main/%E5%8E%9F%E5%A7%8B%E7%A2%BC/6-3-2.png)
 > # 7.參考文獻(源代碼)：
